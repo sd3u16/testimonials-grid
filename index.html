@@ -147,19 +147,47 @@
     @media screen and (min-width: 1024px) {
 
       body{
-        display: grid;
-       
-        gap: 1.2rem;
-        justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(min-content, max-content)); /* Auto-sizing columns */
-    grid-auto-rows: auto; /* Rows grow based on content */
-    align-items: start; /* Prevents stretching */
+        display:grid;
+        gap:3px;
+  
+        min-height:100vh;
+        gap: 1.1rem;
+
+        grid-template-areas:
+          "pu pu gr wh"
+          "wm dr dr wh";
+        
         
        
       
 
       
       
+    }
+
+    #box1{
+      grid-area: pu;
+    }
+    #box2{
+      grid-area: gr;
+    
+      align-content: stretch;
+      align-self: stretch;
+      align-items: stretch;
+      justify-content: stretch;
+      justify-items: stretch;
+      justify-self: stretch;
+      margin-top: 2.8rem;
+     
+      
+    }
+
+    #box5{
+      grid-area: wh;
+    }
+
+    #box4{
+      grid-area: dr;
     }
   }
 
