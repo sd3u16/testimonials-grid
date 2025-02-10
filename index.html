@@ -144,6 +144,25 @@
       box-shadow: 0 0 25px 20px #00000055;
     }
 
+    @media screen and (min-width: 1024px) {
+
+      body{
+        display: grid;
+       
+        gap: 1.2rem;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(min-content, max-content)); /* Auto-sizing columns */
+    grid-auto-rows: auto; /* Rows grow based on content */
+    align-items: start; /* Prevents stretching */
+        
+       
+      
+
+      
+      
+    }
+  }
+
   
   </style>
 </head>
